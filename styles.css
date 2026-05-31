@@ -309,38 +309,70 @@ body{
     display:flex;
     flex-direction:column;
     gap:28px;
-    padding-left:20px;
+
+    max-width:420px;
+    width:100%;
+
+    margin:auto 0;
+    padding-left:60px;
 }
 
 .info-item{
-    display:flex;
-    align-items:flex-start;
-    gap:18px;
+    display:grid;
+    grid-template-columns:40px 1fr;
+    align-items:start;
+    column-gap:18px;
 }
 
 .info-item i{
     color:var(--accent);
     font-size:22px;
-    width:28px;
-    margin-top:4px;
+    margin-top:2px;
 }
 
 .info-label{
     display:block;
+
     color:var(--accent);
-    font-size:0.9rem;
+
+    font-size:.85rem;
     font-weight:700;
-    margin-bottom:4px;
-    letter-spacing:.5px;
+
     text-transform:uppercase;
+    letter-spacing:1px;
+
+    margin-bottom:6px;
 }
 
 .info-item p{
-    color:var(--muted);
-    font-size:1rem;
-    line-height:1.6;
+    color:#fff;
+
+    font-size:1.05rem;
+    line-height:1.4;
+
+    margin:0;
 }
 
+.about-grid{
+    display:grid;
+    grid-template-columns:1.4fr 0.9fr;
+    gap:80px;
+    align-items:center;
+}
+
+.info-item{
+    display:grid;
+    grid-template-columns:40px 1fr;
+    column-gap:18px;
+
+    padding-bottom:20px;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.info-item:last-child{
+    border-bottom:none;
+    padding-bottom:0;
+}
 /* ================= TIMELINE ================= */
 
 .timeline{
