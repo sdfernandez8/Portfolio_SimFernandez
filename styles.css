@@ -61,6 +61,11 @@ body{
     gap:20px;
 }
 
+.nav-right .btn-primary{
+    padding:10px 20px;
+    font-size:14px;
+}
+
 .nav-link{
     text-decoration:none;
     color:#d6d6d6;
