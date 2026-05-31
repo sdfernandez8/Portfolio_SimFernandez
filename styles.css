@@ -324,6 +324,11 @@ body{
     column-gap:18px;
 }
 
+.info-item small{
+    color:var(--muted);
+    font-size:.85rem;
+}
+
 .info-item i{
     color:var(--accent);
     font-size:22px;
