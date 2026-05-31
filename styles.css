@@ -43,48 +43,30 @@ z-index:1000;
 /* ================= NAV GREETING ================= */
 
 .logo-mark{
+    color:#d6d6d6;              /* same as nav-right links */
     text-decoration:none;
+    font-size:14px;             /* same size */
+    font-weight:500;            /* same weight */
 
-    color:#ffffff;
-
-    font-size:14px;
-
-    font-weight:600;
-
-    padding:8px 14px;
+    padding:8px 14px;           /* same padding */
 
     border-radius:999px;
 
-    background:rgba(21,96,189,.08);
-
-    border:1px solid rgba(21,96,189,.15);
-
     position:relative;
-
-    overflow:hidden;
 
     white-space:nowrap;
 
-    animation:
-        slideInLeft 1s ease forwards,
-        floatGreeting 4s ease-in-out infinite;
+    transition:0.25s ease;
 
-    transition:.3s ease;
+    animation:slideInLeft 1s ease forwards;
 }
 
 .logo-mark:hover{
-
     color:#fff;
 
-    background:rgba(21,96,189,.18);
+    background:rgba(21,96,189,0.15);
 
-    border-color:rgba(21,96,189,.35);
-
-    box-shadow:
-        0 0 12px rgba(21,96,189,.25),
-        0 0 25px rgba(21,96,189,.15);
-
-    transform:translateY(-2px);
+    box-shadow:0 0 0 1px rgba(21,96,189,0.4);
 }
 
 .logo-mark::before{
