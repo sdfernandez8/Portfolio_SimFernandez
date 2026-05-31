@@ -3,10 +3,11 @@ document.addEventListener("DOMContentLoaded", () => {
     /* ================= TYPING EFFECT ================= */
 
     const roles = [
-        "Senior BI Developer",
+        "Business Intelligence Developer",
+        "Reports Analyst",
         "Power BI Specialist",
         "Data Analyst",
-        "Automation Engineer"
+        "Automation"
     ];
 
     const typingText = document.getElementById("typing-text");
