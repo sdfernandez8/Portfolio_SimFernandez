@@ -230,7 +230,7 @@ body{
 
     gap:18px;
 
-    color:#c7ced9;
+    color:var(--accent);
 
     font-size:14px;
     font-weight:600;
