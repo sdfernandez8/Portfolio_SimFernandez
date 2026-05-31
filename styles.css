@@ -222,43 +222,27 @@ body{
 /* ================= EXPERTISE ================= */
 
 .hero-tags{
+    margin-top:35px;
+
     display:flex;
     justify-content:center;
-    align-items:center;
     flex-wrap:wrap;
 
-    margin-top:30px;
+    gap:18px;
 
-    gap:0;
-}
-
-.hero-tags span{
-    color:#d6dbe4;
+    color:#c7ced9;
 
     font-size:14px;
     font-weight:600;
 
-    letter-spacing:.5px;
-
-    padding:0 18px;
-
-    position:relative;
+    text-transform:uppercase;
+    letter-spacing:1px;
 }
 
-.hero-tags span:not(:last-child)::after{
-    content:"";
-
-    position:absolute;
-
-    right:0;
-    top:50%;
-
-    width:1px;
-    height:14px;
-
-    background:rgba(255,255,255,.15);
-
-    transform:translateY(-50%);
+.hero-tags span{
+    padding:0;
+    border:none;
+    background:none;
 }
 
 .hero-badge{
