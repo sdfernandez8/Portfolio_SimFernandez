@@ -330,16 +330,22 @@ font-size:13px;
 /* ================= CONTENT SECTIONS ================= */
 
 .row-section{
-    min-height:100vh;
+    height:100vh;
 
     display:flex;
     flex-direction:column;
     justify-content:center;
 
-    padding:120px 60px;
-
+    width:100%;
     max-width:1300px;
-    margin:auto;
+
+    margin:0 auto;
+    padding:120px 60px;
+}
+
+#about .hero-card,
+#projects .hero-card{
+    width:100%;
 }
 
 .row-title{
