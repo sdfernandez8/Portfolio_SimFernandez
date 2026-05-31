@@ -569,3 +569,34 @@ body{
         height:45px;
     }
 }
+
+
+/* ================= CV BACK BUTTON ================= */
+
+.nav-back-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    text-decoration:none;
+
+    background:var(--accent);
+    color:#fff !important;
+
+    padding:14px 28px;
+
+    border-radius:10px;
+
+    font-weight:700;
+
+    transition:.3s ease;
+
+    line-height:1;
+}
+
+.nav-back-btn:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(21,96,189,.35);
+}
