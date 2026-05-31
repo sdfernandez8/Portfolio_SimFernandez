@@ -305,29 +305,40 @@ body{
     margin-bottom:25px;
 }
 
-.contact-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:20px;
+.contact-info{
+    display:flex;
+    flex-direction:column;
+    gap:28px;
+    padding-left:20px;
 }
 
-.contact-card{
-    background:var(--panel);
-
-    border:1px solid var(--border);
-
-    border-radius:18px;
-
-    padding:24px;
+.info-item{
+    display:flex;
+    align-items:flex-start;
+    gap:18px;
 }
 
-.contact-card h4{
+.info-item i{
     color:var(--accent);
-    margin-bottom:10px;
+    font-size:22px;
+    width:28px;
+    margin-top:4px;
 }
 
-.contact-card p{
+.info-label{
+    display:block;
+    color:var(--accent);
+    font-size:0.9rem;
+    font-weight:700;
+    margin-bottom:4px;
+    letter-spacing:.5px;
+    text-transform:uppercase;
+}
+
+.info-item p{
     color:var(--muted);
+    font-size:1rem;
+    line-height:1.6;
 }
 
 /* ================= TIMELINE ================= */
@@ -581,8 +592,9 @@ body{
         grid-template-columns:1fr;
     }
 
-    .contact-grid{
-        grid-template-columns:1fr;
+    .contact-info{
+        padding-left:0;
+        margin-top:20px;
     }
 
     .hero-card{
