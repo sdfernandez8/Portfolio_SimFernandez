@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Typing effect (Netflix intro style)
+    /* ================= TYPING EFFECT ================= */
+
     const roles = [
         "Senior BI Developer",
         "Power BI Specialist",
@@ -20,27 +21,88 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (!deleting) {
 
-            typingText.textContent = current.substring(0, charIndex++);
-            
+            typingText.textContent =
+                current.substring(0, charIndex++);
+
             if (charIndex > current.length) {
+
                 deleting = true;
+
                 setTimeout(typeEffect, 1500);
+
                 return;
             }
 
         } else {
 
-            typingText.textContent = current.substring(0, charIndex--);
+            typingText.textContent =
+                current.substring(0, charIndex--);
 
             if (charIndex < 0) {
+
                 deleting = false;
-                roleIndex = (roleIndex + 1) % roles.length;
+
+                roleIndex =
+                    (roleIndex + 1) % roles.length;
             }
         }
 
-        setTimeout(typeEffect, deleting ? 50 : 90);
+        setTimeout(
+            typeEffect,
+            deleting ? 50 : 90
+        );
     }
 
     typeEffect();
+
+    /* ================= SCROLL SPY ================= */
+
+    const sections =
+        document.querySelectorAll("section");
+
+    const navLinks =
+        document.querySelectorAll(".nav-link");
+
+    function activateNav() {
+
+        let currentSection = "";
+
+        sections.forEach(section => {
+
+            const sectionTop =
+                section.offsetTop - 150;
+
+            const sectionHeight =
+                section.offsetHeight;
+
+            if (
+                window.scrollY >= sectionTop &&
+                window.scrollY <
+                    sectionTop + sectionHeight
+            ) {
+                currentSection =
+                    section.getAttribute("id");
+            }
+        });
+
+        navLinks.forEach(link => {
+
+            link.classList.remove("active");
+
+            if (
+                link.getAttribute("href") ===
+                "#" + currentSection
+            ) {
+                link.classList.add("active");
+            }
+        });
+    }
+
+    window.addEventListener(
+        "scroll",
+        activateNav
+    );
+
+    activateNav();
 
 });
