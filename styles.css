@@ -49,14 +49,14 @@ z-index:1000;
 }
 
 .logo-mark img{
-    width:32px;
-    height:32px;
+    width:10px;
+    height:10px;
 
     object-fit:cover;
 
-    border-radius:50%;
+    border-radius:30%;
 
-    border:1.5px solid rgba(21,96,189,.5);
+    border:.5px solid rgba(21,96,189,.5);
 
     box-shadow:
         0 0 0 2px rgba(21,96,189,.1);
