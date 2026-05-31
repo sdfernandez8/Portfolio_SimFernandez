@@ -21,11 +21,22 @@ html{
 }
 
 body{
-    background:var(--bg);
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(21,96,189,.25),
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at bottom right,
+            rgba(21,96,189,.15),
+            transparent 35%
+        ),
+        #0f1115;
+
     color:#fff;
     overflow-x:hidden;
 }
-
 /* ================= NAV ================= */
 
 .nav{
