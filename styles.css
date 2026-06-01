@@ -434,7 +434,9 @@ body{
 
 /* icon */
 .professional-achievement h3 i{
-    color:var(--accent);
+    color:#f5c542; /* gold */
+
+    text-shadow:0 0 8px rgba(245,197,66,0.35);
 }
 
 /* text */
