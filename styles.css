@@ -402,78 +402,102 @@ body{
 }
 
 
+/* ================= CERTIFICATIONS (50% WIDTH GLASS MODULE) ================= */
 
-/* ================= CERTIFICATIONS - GLASS EXECUTIVE STYLE ================= */
+.professional-certifications{
+    margin-top:40px;
+    padding-top:25px;
+    border-top:1px solid rgba(255,255,255,.08);
 
+    width:50%;
+}
+
+/* heading */
+.professional-certifications h3{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    margin-bottom:18px;
+
+    font-size:.95rem;
+    font-weight:600;
+
+    color:#fff;
+}
+
+/* stack container */
 .certification-list{
     display:flex;
     flex-direction:column;
-    gap:14px;
+    gap:10px;
 }
 
-/* GLASS CARD */
+/* compact glass card */
 .cert-item{
     display:flex;
     align-items:center;
-    gap:14px;
+    gap:12px;
 
-    padding:16px 18px;
+    padding:12px 14px;
 
-    background:rgba(255,255,255,0.06);
-    border:1px solid rgba(255,255,255,0.12);
-    border-radius:14px;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.10);
+    border-radius:12px;
 
-    backdrop-filter:blur(14px);
-    -webkit-backdrop-filter:blur(14px);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
 
-    box-shadow:
-        0 6px 18px rgba(0,0,0,0.18);
-
-    transition:none; /* ❌ removes hover motion */
+    box-shadow:0 4px 14px rgba(0,0,0,0.15);
 }
 
-/* optional: subtle brightness on hover ONLY (no movement) */
-.cert-item:hover{
-    background:rgba(255,255,255,0.09);
-    border-color:rgba(255,255,255,0.18);
-}
-
-/* ICON (neutral glass circle) */
+/* icon smaller */
 .cert-icon{
-    width:42px;
-    height:42px;
+    width:34px;
+    height:34px;
 
     display:flex;
     align-items:center;
     justify-content:center;
 
-    border-radius:10px;
+    border-radius:8px;
 
     background:rgba(255,255,255,0.08);
-    border:1px solid rgba(255,255,255,0.12);
+    border:1px solid rgba(255,255,255,0.10);
 
-    color:#ffffff;
+    color:#fff;
 
-    font-size:18px;
+    font-size:14px;
 }
 
-/* TEXT */
+/* text layout compact */
 .cert-info h4{
     margin:0;
-    font-size:1rem;
-    color:#ffffff;
+    font-size:.85rem;
+    line-height:1.3;
+    font-weight:600;
 }
 
 .cert-info p{
     margin:2px 0 0 0;
+    font-size:.75rem;
     color:rgba(255,255,255,0.65);
-    font-size:.9rem;
 }
 
 .cert-info span{
-    font-size:.85rem;
-    color:rgba(255,255,255,0.85);
+    display:block;
+    margin-top:2px;
+
+    font-size:.72rem;
+    color:rgba(255,255,255,0.8);
     font-weight:500;
+}
+
+/* RESPONSIVE (IMPORTANT) */
+@media(max-width:900px){
+    .professional-certifications{
+        width:100%;
+    }
 }
 
 /* ================= TIMELINE ================= */
