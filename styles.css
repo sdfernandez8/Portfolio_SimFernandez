@@ -382,39 +382,47 @@ body{
 .cert-tags{
     display:flex;
     flex-wrap:wrap;
-    gap:12px;
+    gap:14px;
 }
 
 .cert-tags span{
     display:flex;
-    align-items:center;
-    gap:8px;
+    flex-direction:column;
+    align-items:flex-start;
 
-    padding:10px 16px;
+    gap:4px;
 
-    background:rgba(21,96,189,.10);
+    padding:14px 18px;
 
-    border:1px solid rgba(21,96,189,.25);
+    background:rgba(21,96,189,.08);
 
-    border-radius:999px;
+    border:1px solid rgba(21,96,189,.18);
 
-    font-size:13px;
-    color:#dbe7ff;
+    border-radius:14px;
+
+    min-width:260px;
 
     transition:.25s ease;
 }
 
-.cert-tags span:hover{
-    transform:translateY(-2px);
-
-    border-color:rgba(21,96,189,.50);
-
-    background:rgba(21,96,189,.15);
+.cert-tags span i{
+    color:#5ea0ff;
+    margin-bottom:2px;
 }
 
-.cert-tags i{
-    color:#5ea0ff;
-    font-size:14px;
+.cert-tags span small{
+    color:var(--muted);
+    font-size:11px;
+    letter-spacing:.3px;
+}
+
+.cert-description{
+    color:var(--muted);
+    font-size:.95rem;
+
+    margin-bottom:20px;
+
+    line-height:1.8;
 }
 
 
