@@ -733,3 +733,62 @@ body{
     box-shadow:
         0 10px 25px rgba(21,96,189,.35);
 }
+
+.nav-center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    flex:1;
+}
+
+.data-process{
+    position:relative;
+
+    display:flex;
+    align-items:center;
+    gap:28px;
+
+    color:var(--accent);
+
+    width:180px;
+    height:24px;
+}
+
+.data-process i{
+    font-size:15px;
+    opacity:.75;
+}
+
+.data-packet{
+    position:absolute;
+
+    top:50%;
+    left:0;
+
+    width:8px;
+    height:8px;
+
+    border-radius:50%;
+
+    background:var(--accent);
+
+    box-shadow:
+        0 0 12px rgba(21,96,189,.9);
+
+    transform:translateY(-50%);
+
+    animation:dataJourney 4s linear infinite;
+}
+
+@keyframes dataJourney{
+
+    0%{
+        left:0;
+    }
+
+    100%{
+        left:175px;
+    }
+
+}
