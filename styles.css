@@ -402,6 +402,51 @@ body{
 }
 
 
+/* ================= PROFESSIONAL ACHIEVEMENT ================= */
+
+.professional-achievement{
+    margin-top:30px;
+    padding:18px 20px;
+
+    border-left:3px solid var(--accent);
+
+    background:rgba(255,255,255,0.03);
+
+    border-radius:10px;
+
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+}
+
+/* heading */
+.professional-achievement h3{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    margin-bottom:10px;
+
+    font-size:.95rem;
+    font-weight:600;
+
+    color:#fff;
+}
+
+/* icon */
+.professional-achievement h3 i{
+    color:var(--accent);
+}
+
+/* text */
+.professional-achievement p{
+    font-size:.85rem;
+    line-height:1.8;
+
+    color:rgba(255,255,255,0.75);
+
+    margin:0;
+}
+
 
 /* ================= CERTIFICATIONS - 3 COLUMN CENTERED PERFECT ALIGN ================= */
 
