@@ -313,7 +313,7 @@ body{
     padding-bottom:30px;
     border-bottom:1px solid rgba(255,255,255,.08);
 }
-    
+
 .about-details span,
 .about-details a{
     display:flex;
@@ -382,7 +382,7 @@ body{
 .cert-tags{
     display:flex;
     flex-wrap:wrap;
-    gap:14px;
+    gap:12px;
 }
 
 .cert-tags span{
@@ -408,7 +408,7 @@ body{
     transform:translateY(-2px);
 
     border-color:rgba(21,96,189,.50);
-    
+
     background:rgba(21,96,189,.15);
 }
 
