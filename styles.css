@@ -402,14 +402,16 @@ body{
 }
 
 
-/* ================= CERTIFICATIONS (50% WIDTH GLASS MODULE) ================= */
+/* ================= CERTIFICATIONS (SIDE GLASS MODULE FIXED) ================= */
 
 .professional-certifications{
     margin-top:40px;
     padding-top:25px;
     border-top:1px solid rgba(255,255,255,.08);
 
-    width:50%;
+    /* IMPORTANT: makes it behave like a right-side column */
+    flex:1;
+    min-width:280px;
 }
 
 /* heading */
@@ -493,11 +495,18 @@ body{
     font-weight:500;
 }
 
-/* RESPONSIVE (IMPORTANT) */
+/* RESPONSIVE */
 @media(max-width:900px){
     .professional-certifications{
+        flex:unset;
         width:100%;
     }
+}
+
+.about-card{
+    display:flex;
+    gap:40px;
+    align-items:flex-start;
 }
 
 /* ================= TIMELINE ================= */
