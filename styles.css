@@ -289,95 +289,60 @@ body{
 
 /* ================= ABOUT ================= */
 
-.about-grid{
-    display:grid;
-    grid-template-columns:1.3fr 1fr;
-    gap:40px;
+.about-details{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+
+    gap:28px;
+
+    margin-bottom:50px;
+    padding-bottom:30px;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.about-details span,
+.about-details a{
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    color:#fff;
+    text-decoration:none;
+
+    font-size:14px;
+    font-weight:500;
+
+    transition:.25s ease;
+}
+
+.about-details a:hover{
+    color:var(--accent);
+}
+
+.about-details i{
+    color:var(--accent);
+    font-size:16px;
 }
 
 .about-content{
+    max-width:1000px;
+    margin:0 auto;
+
     color:var(--muted);
+
     line-height:2;
     font-size:1.05rem;
+
+    text-align:justify;
 }
 
 .about-content p{
     margin-bottom:25px;
 }
 
-.contact-info{
-    display:flex;
-    flex-direction:column;
-    gap:28px;
-
-    max-width:420px;
-    width:100%;
-
-    margin:auto 0;
-    padding-left:60px;
-}
-
-.info-item{
-    display:grid;
-    grid-template-columns:40px 1fr;
-    align-items:start;
-    column-gap:18px;
-}
-
-.info-item small{
-    color:var(--muted);
-    font-size:.85rem;
-}
-
-.info-item i{
-    color:var(--accent);
-    font-size:22px;
-    margin-top:2px;
-}
-
-.info-label{
-    display:block;
-
-    color:var(--accent);
-
-    font-size:.85rem;
-    font-weight:700;
-
-    text-transform:uppercase;
-    letter-spacing:1px;
-
-    margin-bottom:6px;
-}
-
-.info-item p{
-    color:#fff;
-
-    font-size:1.05rem;
-    line-height:1.4;
-
-    margin:0;
-}
-
-.about-grid{
-    display:grid;
-    grid-template-columns:1.4fr 0.9fr;
-    gap:80px;
-    align-items:center;
-}
-
-.info-item{
-    display:grid;
-    grid-template-columns:40px 1fr;
-    column-gap:18px;
-
-    padding-bottom:20px;
-    border-bottom:1px solid rgba(255,255,255,.08);
-}
-
-.info-item:last-child{
-    border-bottom:none;
-    padding-bottom:0;
-}
 /* ================= TIMELINE ================= */
 
 .timeline{
@@ -625,14 +590,9 @@ body{
 
 @media(max-width:900px){
 
-    .about-grid{
-        grid-template-columns:1fr;
-    }
-
-    .contact-info{
-        padding-left:0;
-        margin-top:20px;
-    }
+.about-details{
+    gap:18px;
+}
 
     .hero-card{
         padding:50px 30px;
