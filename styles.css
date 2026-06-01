@@ -403,7 +403,7 @@ body{
 
 
 
-/* ================= CERTIFICATIONS - COMPACT LIST STYLE ================= */
+/* ================= CERTIFICATIONS - GLASS EXECUTIVE STYLE ================= */
 
 .certification-list{
     display:flex;
@@ -411,7 +411,7 @@ body{
     gap:14px;
 }
 
-/* each row item */
+/* GLASS CARD */
 .cert-item{
     display:flex;
     align-items:center;
@@ -419,19 +419,26 @@ body{
 
     padding:16px 18px;
 
-    background:rgba(255,255,255,0.03);
-    border:1px solid var(--border);
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.12);
     border-radius:14px;
 
-    transition:.25s ease;
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+
+    box-shadow:
+        0 6px 18px rgba(0,0,0,0.18);
+
+    transition:none; /* ❌ removes hover motion */
 }
 
+/* optional: subtle brightness on hover ONLY (no movement) */
 .cert-item:hover{
-    border-color:var(--accent);
-    transform:translateX(4px);
+    background:rgba(255,255,255,0.09);
+    border-color:rgba(255,255,255,0.18);
 }
 
-/* icon */
+/* ICON (neutral glass circle) */
 .cert-icon{
     width:42px;
     height:42px;
@@ -442,28 +449,31 @@ body{
 
     border-radius:10px;
 
-    background:rgba(21,96,189,.12);
-    color:var(--accent);
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.12);
+
+    color:#ffffff;
 
     font-size:18px;
 }
 
-/* text block */
+/* TEXT */
 .cert-info h4{
     margin:0;
     font-size:1rem;
+    color:#ffffff;
 }
 
 .cert-info p{
     margin:2px 0 0 0;
-    color:var(--muted);
+    color:rgba(255,255,255,0.65);
     font-size:.9rem;
 }
 
 .cert-info span{
     font-size:.85rem;
-    color:var(--accent);
-    font-weight:600;
+    color:rgba(255,255,255,0.85);
+    font-weight:500;
 }
 
 /* ================= TIMELINE ================= */
