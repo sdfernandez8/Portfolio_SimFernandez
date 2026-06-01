@@ -423,6 +423,124 @@ body{
     margin-bottom:12px;
 }
 
+/* ================= ABOUT CARD (OPTION 5 UPGRADE) ================= */
+
+.about-card{
+    position:relative;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:24px;
+
+    padding:60px 70px;
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,.35),
+        inset 0 1px 0 rgba(255,255,255,.05);
+
+    overflow:hidden;
+}
+
+/* Blue glow accent (premium effect) */
+.about-card::before{
+    content:"";
+
+    position:absolute;
+    top:-140px;
+    right:-140px;
+
+    width:320px;
+    height:320px;
+
+    background:radial-gradient(
+        circle,
+        rgba(21,96,189,.20),
+        transparent 70%
+    );
+
+    pointer-events:none;
+}
+
+/* ================= ABOUT DETAILS ROW ================= */
+
+.about-details{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+
+    gap:28px;
+
+    margin-bottom:40px;
+    padding-bottom:30px;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.about-details span,
+.about-details a{
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    color:#fff;
+    text-decoration:none;
+
+    font-size:14px;
+    font-weight:500;
+
+    transition:.25s ease;
+}
+
+.about-details a:hover{
+    color:var(--accent);
+    transform:translateY(-1px);
+}
+
+.about-details i{
+    color:var(--accent);
+    font-size:16px;
+}
+
+/* ================= ABOUT CONTENT ================= */
+
+.about-content{
+    max-width:1000px;
+    margin:0 auto;
+
+    color:var(--muted);
+
+    line-height:2;
+    font-size:1.05rem;
+
+    text-align:justify;
+    text-justify:inter-word;
+}
+
+.about-content p{
+    margin-bottom:25px;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:900px){
+
+    .about-card{
+        padding:40px 25px;
+    }
+
+    .about-details{
+        gap:16px;
+    }
+
+}
+
+
 /* ================= ACHIEVEMENTS ================= */
 
 .achievement-grid{
