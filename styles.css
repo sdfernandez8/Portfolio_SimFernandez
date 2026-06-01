@@ -387,42 +387,34 @@ body{
 
 .cert-tags span{
     display:flex;
-    flex-direction:column;
-    align-items:flex-start;
+    align-items:center;
+    gap:8px;
 
-    gap:4px;
+    padding:10px 16px;
 
-    padding:14px 18px;
+    background:rgba(21,96,189,.10);
 
-    background:rgba(21,96,189,.08);
+    border:1px solid rgba(21,96,189,.25);
 
-    border:1px solid rgba(21,96,189,.18);
+    border-radius:999px;
 
-    border-radius:14px;
-
-    min-width:260px;
+    font-size:13px;
+    color:#dbe7ff;
 
     transition:.25s ease;
 }
 
-.cert-tags span i{
+.cert-tags span:hover{
+    transform:translateY(-2px);
+
+    border-color:rgba(21,96,189,.50);
+    
+    background:rgba(21,96,189,.15);
+}
+
+.cert-tags i{
     color:#5ea0ff;
-    margin-bottom:2px;
-}
-
-.cert-tags span small{
-    color:var(--muted);
-    font-size:11px;
-    letter-spacing:.3px;
-}
-
-.cert-description{
-    color:var(--muted);
-    font-size:.95rem;
-
-    margin-bottom:20px;
-
-    line-height:1.8;
+    font-size:14px;
 }
 
 
