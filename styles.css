@@ -335,6 +335,73 @@ body{
     margin-bottom:25px;
 }
 
+
+/* ================= PROFESSIONAL DEVELOPMENT ================= */
+
+.professional-development{
+    margin-top:50px;
+    padding-top:35px;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+.professional-development h3{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    margin-bottom:20px;
+
+    font-size:1rem;
+    font-weight:600;
+
+    color:var(--muted);
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.professional-development h3 i{
+    color:var(--accent);
+}
+
+.cert-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.cert-tags span{
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    padding:10px 16px;
+
+    background:rgba(21,96,189,.10);
+
+    border:1px solid rgba(21,96,189,.25);
+
+    border-radius:999px;
+
+    font-size:13px;
+    color:#dbe7ff;
+
+    transition:.25s ease;
+}
+
+.cert-tags span:hover{
+    transform:translateY(-2px);
+
+    border-color:rgba(21,96,189,.50);
+
+    background:rgba(21,96,189,.15);
+}
+
+.cert-tags i{
+    color:#5ea0ff;
+    font-size:14px;
+}
+
+
 /* ================= TIMELINE ================= */
 
 .timeline{
