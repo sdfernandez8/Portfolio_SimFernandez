@@ -86,27 +86,41 @@ body{
     text-decoration:none;
     color:#d6d6d6;
     font-size:14px;
+
     position:relative;
-    transition:.25s ease;
+
+    transition:
+        color .3s ease;
 }
 
-.nav-link:hover{
-    color:var(--accent);
-}
-
+.nav-link:hover,
 .nav-link.active{
     color:var(--accent);
 }
 
-.nav-link.active::after{
+.nav-link::after{
     content:"";
+
     position:absolute;
-    left:0;
+
+    left:50%;
     bottom:-8px;
-    width:100%;
+
+    width:0;
     height:2px;
+
     background:var(--accent);
+
     border-radius:999px;
+
+    transform:translateX(-50%);
+
+    transition:width .3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after{
+    width:100%;
 }
 
 /* ================= HERO ================= */
