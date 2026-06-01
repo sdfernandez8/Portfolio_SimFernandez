@@ -352,15 +352,15 @@ body{
 }
 
 
-/* ================= PROFESSIONAL DEVELOPMENT ================= */
+/* ================= PROFESSIONAL CERTIFICATIONS ================= */
 
-.professional-development{
+.professional-certifications{
     margin-top:50px;
     padding-top:35px;
     border-top:1px solid rgba(255,255,255,.08);
 }
 
-.professional-development h3{
+.professional-certifications h3{
     display:flex;
     align-items:center;
     gap:10px;
@@ -375,48 +375,54 @@ body{
     letter-spacing:1px;
 }
 
-.professional-development h3 i{
+.professional-certifications h3 i{
     color:var(--accent);
 }
 
-.cert-tags{
+.certifications-list{
     display:flex;
-    flex-wrap:wrap;
+    flex-direction:column;
     gap:12px;
 }
 
-.cert-tags span{
+.cert-item{
     display:flex;
     align-items:center;
-    gap:8px;
+    gap:14px;
 
-    padding:10px 16px;
+    padding:14px 18px;
 
     background:rgba(21,96,189,.10);
 
-    border:1px solid rgba(21,96,189,.25);
+    border:1px solid rgba(21,96,189,.20);
+    border-left:4px solid var(--accent);
 
-    border-radius:999px;
-
-    font-size:13px;
-    color:#dbe7ff;
+    border-radius:12px;
 
     transition:.25s ease;
 }
 
-.cert-tags span:hover{
-    transform:translateY(-2px);
+.cert-item:hover{
+    transform:translateX(6px);
 
-    border-color:rgba(21,96,189,.50);
+    border-color:rgba(21,96,189,.45);
 
     background:rgba(21,96,189,.15);
 }
 
-.cert-tags i{
+.cert-item i{
+    font-size:20px;
     color:#5ea0ff;
-    font-size:14px;
+
+    min-width:28px;
+    text-align:center;
 }
 
+.cert-item span{
+    color:#dbe7ff;
+    font-size:14px;
+    font-weight:500;
+}
 
 /* ================= TIMELINE ================= */
 
