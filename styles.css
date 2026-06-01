@@ -784,33 +784,58 @@ body{
         0 10px 25px rgba(21,96,189,.35);
 }
 
+/* ================= DATA FLOW NAVBAR ================= */
+
 .nav-center{
+    flex:1;
+
     display:flex;
     justify-content:center;
     align-items:center;
-
-    flex:1;
 }
 
-.data-process{
+.data-flow{
     position:relative;
 
     display:flex;
     align-items:center;
+    justify-content:center;
+
     gap:28px;
+}
+
+.flow-node{
+    width:42px;
+    height:42px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:rgba(21,96,189,.10);
+
+    border:1px solid rgba(21,96,189,.25);
 
     color:var(--accent);
 
-    width:180px;
-    height:24px;
+    transition:.3s ease;
 }
 
-.data-process i{
-    font-size:15px;
-    opacity:.75;
+.flow-node:hover{
+    transform:translateY(-2px);
+
+    background:rgba(21,96,189,.18);
+
+    border-color:rgba(21,96,189,.45);
 }
 
-.data-packet{
+.flow-node i{
+    font-size:16px;
+}
+
+.data-dot{
     position:absolute;
 
     top:50%;
@@ -823,10 +848,10 @@ body{
 
     background:var(--accent);
 
+    transform:translateY(-50%);
+
     box-shadow:
         0 0 12px rgba(21,96,189,.9);
-
-    transform:translateY(-50%);
 
     animation:dataJourney 4s linear infinite;
 }
@@ -838,7 +863,8 @@ body{
     }
 
     100%{
-        left:175px;
+        left:210px;
     }
 
+}
 }
