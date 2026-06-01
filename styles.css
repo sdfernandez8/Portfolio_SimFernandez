@@ -460,8 +460,11 @@ body{
     top:12px;
     left:12px;
 
-    font-size:36px;
+    font-size:18px;
+
     color:var(--accent);
+
+    opacity:0.9;
 }
 
 /* TITLE */
