@@ -326,9 +326,11 @@ body{
 .about-content{
     max-width:1000px;
     margin:0 auto;
+
     line-height:2;
     font-size:1.05rem;
-    text-align:justify;
+
+    text-align:center;
 }
 
 .about-content p{
