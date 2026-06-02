@@ -880,17 +880,67 @@ body{
         font-size:2.2rem;
     }
 
+/* ================= MOBILE NAVBAR ================= */
+
+@media(max-width:900px){
+
     .nav{
+        flex-direction:column;
+        gap:12px;
+
         padding:14px 18px;
+
+        justify-content:center;
+        align-items:center;
     }
 
+    /* Row 1 - Greeting */
+    .nav-left{
+        width:100%;
+        text-align:center;
+        order:1;
+    }
+
+    .nav-greeting{
+        display:block;
+        font-size:13px;
+    }
+
+    /* Row 2 - Data Flow Icons */
+    .nav-center{
+        width:100%;
+        order:2;
+    }
+
+    .data-flow{
+        gap:18px;
+        transform:scale(.9);
+    }
+
+    .flow-node{
+        width:36px;
+        height:36px;
+    }
+
+    /* Row 3 - Navigation */
     .nav-right{
-        gap:12px;
+        width:100%;
+        order:3;
+
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:16px;
     }
 
     .nav-link{
-        font-size:12px;
+        font-size:13px;
     }
+
+}
+
+.hero{
+    padding-top:250px;
+}    
 
     .project-image{
         height:250px;
